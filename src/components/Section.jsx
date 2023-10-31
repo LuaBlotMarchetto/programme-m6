@@ -11,8 +11,8 @@ const Section = () => {
           <p>{elem.type}</p>
           <div>
             <h4>{elem.duration}</h4>
-            <li>{elem.isUnseen ? "Inédit" : null} </li>
-            <li>{elem.direct ? "Direct" : null}</li>
+            {elem.isUnseen ? <li>Inédit </li> : null}
+            {elem.direct ? <li>Direct </li> : null}
           </div>
         </div>
       </section>
